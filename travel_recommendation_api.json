@@ -9,7 +9,7 @@
         {
           "name": "Sydney, Australia",
 
-          "imageUrl": "enter_your_image_for_sydney.jpg",
+          "imageUrl": "./img/sydney.jpg",
 
           "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
         },
@@ -17,7 +17,7 @@
         {
           "name": "Melbourne, Australia",
 
-          "imageUrl": "enter_your_image_for_melbourne.jpg",
+          "imageUrl": "./img/melbourne.jpg",
 
           "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
         }
@@ -33,7 +33,7 @@
         {
           "name": "Tokyo, Japan",
 
-          "imageUrl": "enter_your_image_for_tokyo.jpg",
+          "imageUrl": "./img/tokyo.jpg",
 
           "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
         },
@@ -41,7 +41,7 @@
         {
           "name": "Kyoto, Japan",
 
-          "imageUrl": "enter_your_image_for_kyoto.jpg",
+          "imageUrl": "./img/kyoto.jpg",
 
           "description": "Known for its historic temples, gardens, and traditional tea houses."
         }
@@ -57,7 +57,7 @@
         {
           "name": "Rio de Janeiro, Brazil",
 
-          "imageUrl": "enter_your_image_for_rio.jpg",
+          "imageUrl": "./img/rio.jpg",
 
           "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
         },
@@ -65,7 +65,7 @@
         {
           "name": "São Paulo, Brazil",
 
-          "imageUrl": "enter_your_image_for_sao-paulo.jpg",
+          "imageUrl": "./img/sao-paulo.jpg",
 
           "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
         }
@@ -79,7 +79,7 @@
 
       "name": "Angkor Wat, Cambodia",
 
-      "imageUrl": "enter_your_image_for_angkor-wat.jpg",
+      "imageUrl": "./img/angkor.jpg",
 
       "description": "A UNESCO World Heritage site and the largest religious monument in the world."
     },
@@ -89,7 +89,7 @@
 
       "name": "Taj Mahal, India",
 
-      "imageUrl": "enter_your_image_for_taj-mahal.jpg",
+      "imageUrl": "./img/taj_mahal-min.webp",
 
       "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
     }
