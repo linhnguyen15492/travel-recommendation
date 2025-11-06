@@ -1,4 +1,9 @@
+let resultDiv = document.getElementById('result');
+
+
 async function searchCondition() {
+    resultDiv.innerHTML = '';
+
     const keywords = { "beach": "beaches", "temple": "temples", "country": "countries" }
 
     let input = document.getElementById('conditionInput').value.toLowerCase();
@@ -10,6 +15,7 @@ async function searchCondition() {
             break;
         }
     }
+
     try {
         const response = await fetch('./travel_recommendation_api.json')
 
@@ -17,9 +23,21 @@ async function searchCondition() {
 
         results = data[input]
 
-        displayResult(results);
+        console.log(results)
 
-    } catch (error) {
+        if (input == 'countries') {
+            for (country of results) {
+                results = country.cities
+                displayResult(results)
+            }
+        } else {
+            displayResult(results);
+        }
+
+    }
+
+
+    catch (error) {
         console.error("Error fetching data:", error);
     }
 }
@@ -27,9 +45,6 @@ async function searchCondition() {
 document.getElementById('btnSearch').addEventListener('click', searchCondition);
 
 function displayResult(results) {
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = '';
-
     results.forEach(element => {
         resultDiv.innerHTML += `<img src="${element.imageUrl}" alt="hjh">`;
         resultDiv.innerHTML += `<h2>${element.name}</h2>`;
@@ -42,7 +57,7 @@ function clearResult() {
     let input = document.getElementById('conditionInput');
 
     input.value = ''
-    let resultDiv = document.getElementById('result');
+
     resultDiv.innerHTML = ''
 }
 
